@@ -4,20 +4,20 @@ const quotes = [
     author: "Arthur C. Clarke",
   },
   {
-    quote: "Science knows no country, because knowledge belongs to humanity, and is the torch which illuminates the world.",
-    author: "Louis Pasteur",
+    quote: "Let your joy be in your journey - not in some distant goal.",
+    author: "Tim Cook",
   },
   {
-    quote: "Without Art, we should have no notion of the sacred; without Science, we should always worship false gods.",
-    author: "W.H. Auden",
+    quote: "Don’t let the noise of others’ opinions drown out your own inner voice.",
+    author: "Steve Jobs",
   },
   {
-    quote: "If I have been able to see further, it was only because I stood on the shoulders of giants.",
-    author: "Isaac Newton",
+    quote: "It’s fine to celebrate success, but it is more important to heed the lessons of failure.",
+    author: "Bill Gates",
   },
   {
-    quote: "I know not with what weapons World War III will be fought, but World War IV will be fought with sticks and stones.",
-    author: "Albert Einstein",
+    quote: "Move fast and break things. Unless you are breaking stuff, you are not moving fast enough.",
+    author: "Mark Zuckerberg",
   },
   {
     quote: "Insanity: doing the same thing over and over again and expecting different results.",
@@ -28,16 +28,20 @@ const quotes = [
     author: "Albert Einstein",
   },
   {
-    quote: "Imagination is more important than knowledge.",
-    author: "Albert Einstein",
+    quote: "People should pursue what they're passionate about. That will make them happier than pretty much anything else.",
+    author: "Elon Musk",
   },
   {
-    quote: "When all think alike, no one thinks very much.",
-    author: "Albert Einstein",
+    quote: "PSome people don't like change, but you need to embrace change if the alternative is disaster.",
+    author: "Elon Musk",
   },
   {
-    quote: "Nothing in life is to be feared. It is only to be understood.",
-    author: "Marie Curie",
+    quote: "If you're changing the world, you're working on important things. You're excited to get up in the morning.",
+    author: "Larry Page",
+  },
+  {
+    quote: "Life’s too short to hang out with people who aren’t resourceful.",
+    author: "Jeff Bezos",
   },
 ];
 
