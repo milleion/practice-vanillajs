@@ -1,27 +1,24 @@
 #login-form {
   margin-top: 100px;
 }
-
 #login-form input {
   width: 450px;
   height: 65px;
   font-size: 2.5rem;
 }
-
 #todo-form input {
   width: 450px;
   height: 50px;
   font-size: 1.5rem;
 }
-
 input {
   background: none;
+  border-color: white;
   border-top: none;
   border-left: none;
   border-right: none;
   text-align: center;
 }
-
 input:focus {
   outline: none;
 }

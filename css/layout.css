@@ -5,33 +5,28 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 .center {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
 #container1 {
   flex-basis: 5%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
-
 #container2 {
   flex-basis: 85%;
 }
-
 #container3 {
   flex-basis: 10%;
   justify-content: flex-start;
 }
-
 #weather {
   align-self: auto;
 }
-
 #quote {
   justify-self: flex-end;
 }

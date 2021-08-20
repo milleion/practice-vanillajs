@@ -7,10 +7,8 @@ function onGeoOk(position) {
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      const weather = document.querySelector("#weather span:first-child");
-      const city = document.querySelector("#weather span:last-child");
-      weather.innerHTML = data.weather[0].main;
-      city.innerHTML = data.name;
+      const weather = document.querySelector("#weather");
+      weather.innerHTML = `${data.weather[0].main}, ${Math.round(data.main.temp)}°C`;
     });
 }
 
@@ -18,4 +16,6 @@ function onGeoError() {
   alert("Can't find you. No weather for you.");
 }
 
-navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+if (localStorage.getItem(USERNAME_KEY) !== null) {
+  navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
+}
