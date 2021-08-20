@@ -1,4 +1,4 @@
-const clock = document.querySelector("h2#clock");
+const clock = document.querySelector("#clock");
 
 function padZero(num) {
   return num.toString().padStart(2, "0");

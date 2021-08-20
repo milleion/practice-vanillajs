@@ -32,7 +32,7 @@ const quotes = [
     author: "Elon Musk",
   },
   {
-    quote: "PSome people don't like change, but you need to embrace change if the alternative is disaster.",
+    quote: "Some people don't like change, but you need to embrace change if the alternative is disaster.",
     author: "Elon Musk",
   },
   {
@@ -50,5 +50,5 @@ const author = document.querySelector("#quote span:last-child");
 
 const chosenQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
-quote.innerText = chosenQuote.quote + "\n";
-author.innerText = chosenQuote.author;
+quote.innerText = chosenQuote.quote;
+author.innerText = `- ${chosenQuote.author} -`;
