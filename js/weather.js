@@ -13,7 +13,7 @@ function onGeoOk(position) {
 }
 
 function onGeoError() {
-  alert("Can't find you. No weather for you.");
+  console.log("Can't find you. No weather for you.");
 }
 
 if (localStorage.getItem(USERNAME_KEY) !== null) {

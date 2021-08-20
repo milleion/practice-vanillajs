@@ -24,11 +24,11 @@ function paintTodo(newTodoObj) {
   li.id = newTodoObj.id;
   const span = document.createElement("span");
   span.innerText = newTodoObj.text;
-  const button = document.createElement("button");
-  button.innerText = "❌";
-  button.addEventListener("click", deleteTodo);
+  const chkImg = document.createElement("img");
+  chkImg.src = "img/chk.png";
+  chkImg.addEventListener("click", deleteTodo);
   li.appendChild(span);
-  li.appendChild(button);
+  li.appendChild(chkImg);
   todoList.appendChild(li);
 }
 
@@ -37,7 +37,7 @@ function handleTodoSubmit(event) {
   const newTodo = todoInput.value;
   todoInput.value = "";
   const newTodoObj = {
-    text: newTodo,
+    text: "· " + newTodo,
     id: Date.now(),
   };
   todos.push(newTodoObj);

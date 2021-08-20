@@ -7,23 +7,24 @@
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style-text.css">
     <link rel="stylesheet" href="css/style-input.css">
-    <link rel="stylesheet" href="css/style-button.css">
+    <link rel="stylesheet" href="css/style-logout-button.css">
+    <link rel="stylesheet" href="css/style-todo.css">
     <link rel="stylesheet" href="css/hidden.css">
 </head>
 <body>
     <div id=container1>
-        <div id="weather" class="white"></div>
+        <div id="weather"></div>
         <button id="logout-button">Log Out</button>
     </div>
     <div id=container2 class="center">
-        <div id="clock" class="white"></div>
+        <div id="clock"></div>
         <form id="login-form">
-            <input class="white font-ys" required maxlength="15" type="text" placeholder="What is your name?">
+            <input required maxlength="15" type="text" placeholder="What is your name?">
         </form>
-        <div id="greeting" class="white font-ys"></div>
-        <div id="todo" class="white">
+        <div id="greeting" class="font-ys"></div>
+        <div id="todo">
             <form id="todo-form">
-                <input class="white" required type="text" placeholder="Write a To Do and Press Enter">
+                <input required type="text" placeholder="Write a To Do and Press Enter">
             </form>
             <ul id="todo-list"></ul>
         </div>

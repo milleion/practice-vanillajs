@@ -30,3 +30,7 @@ body {
 #quote {
   justify-self: flex-end;
 }
+#todo-list li {
+  display: flex;
+  justify-content: space-between;
+}
