@@ -1,3 +1,33 @@
-.hidden {
-  display: none;
+.text {
+  color: white;
+}
+
+#clock {
+  margin-bottom: 0;
+  font-size: 7rem;
+  font-family: "Poiret One", cursive;
+}
+
+#greeting {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  font-size: 3rem;
+  font-family: "Yeon Sung", cursive;
+}
+
+#quote {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#quote span:first-child{
+  font-size: 1.3rem;
+}
+
+#quote span:last-child {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+#weather {
+  font-family: Arial, Helvetica, sans-serif;
 }

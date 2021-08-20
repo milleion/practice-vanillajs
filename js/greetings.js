@@ -6,7 +6,7 @@ const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
 
 function paintGreeting(username) {
-  greeting.innerText = `Hello ${username}!`;
+  greeting.innerText = `Hello, ${username}!`;
 }
 
 function hide(element) {
@@ -18,7 +18,7 @@ function hideById(id) {
   hide(element);
 }
 
-function handleSubmit() {
+function handleNameSubmit() {
   hide(loginForm);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
@@ -31,7 +31,7 @@ if (savedUsername === null) {
   hideById("weather");
   hideById("quote");
   hideById("todo");
-  loginForm.addEventListener("submit", handleSubmit);
+  loginForm.addEventListener("submit", handleNameSubmit);
 } else {
   hide(loginForm);
   paintGreeting(savedUsername);

@@ -6,19 +6,20 @@
     <title>Momentum App</title>
     <link rel="stylesheet" href="css/align.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/hidden.css">
 </head>
 <body>
     <div id=container1 class="center">
-        <div id="weather"><span></span><span></span></div>
+        <div id="weather" class="text"><span></span><span></span></div>
     </div>
     <div id=container2 class="center">
-        <h1 id="clock"></h1>
+        <div id="clock" class="text"></div>
         <form id="login-form">
             <input required maxlength="15" type="text" placeholder="What is your name?">
             <input type="submit" value="Log In">
         </form>
-        <h2 id="greeting"></h2>
-        <div id="todo">
+        <div id="greeting" class="text"></div>
+        <div id="todo" class="text">
             <form id="todo-form">
                 <input required type="text" placeholder="Write a To Do and Press Enter">
             </form>
@@ -26,7 +27,7 @@
         </div>
     </div>
     <div id=container3 class="center">
-        <div id="quote" class="center"><span></span><span></span></div>
+        <div id="quote" class="center text"><span></span><span></span></div>
     </div>
     <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
