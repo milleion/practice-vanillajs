@@ -1,25 +1,28 @@
-.text {
+.white {
   color: white;
 }
 
 #clock {
   margin-bottom: 0;
-  font-size: 7rem;
+  font-size: 7.5rem;
   font-family: "Poiret One", cursive;
 }
 
-#greeting {
-  margin-top: 10px;
-  margin-bottom: 50px;
-  font-size: 3rem;
+.font-ys {
   font-family: "Yeon Sung", cursive;
 }
 
-#quote {
-  font-family: Georgia, 'Times New Roman', Times, serif;
+#greeting {
+  margin-top: 100px;
+  margin-bottom: 80px;
+  font-size: 3rem;
 }
 
-#quote span:first-child{
+#quote {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#quote span:first-child {
   font-size: 1.3rem;
 }
 

@@ -25,6 +25,7 @@ body {
 
 #container3 {
   flex-basis: 10%;
+  justify-content: flex-start;
 }
 
 #weather {
