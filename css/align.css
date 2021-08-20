@@ -15,7 +15,8 @@ body {
 
 #container1 {
   flex-basis: 5%;
-  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
 }
 
 #container2 {

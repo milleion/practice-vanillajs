@@ -1,5 +1,6 @@
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
+const logoutBtn = document.querySelector("#logout-button");
 const greeting = document.querySelector("#greeting");
 
 const HIDDEN_CLASSNAME = "hidden";
@@ -19,10 +20,14 @@ function hideById(id) {
 }
 
 function handleNameSubmit() {
-  hide(loginForm);
   const username = loginInput.value;
   localStorage.setItem(USERNAME_KEY, username);
   paintGreeting(username);
+}
+
+function handleLogoutClick() {
+  window.location.reload();
+  localStorage.removeItem(USERNAME_KEY);
 }
 
 const savedUsername = localStorage.getItem(USERNAME_KEY);
@@ -31,8 +36,10 @@ if (savedUsername === null) {
   hideById("weather");
   hideById("quote");
   hideById("todo");
+  hide(logoutBtn);
   loginForm.addEventListener("submit", handleNameSubmit);
 } else {
   hide(loginForm);
   paintGreeting(savedUsername);
+  logoutBtn.addEventListener("click", handleLogoutClick);
 }
