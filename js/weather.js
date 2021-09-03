@@ -8,7 +8,7 @@ function onGeoOk(position) {
     .then((response) => response.json())
     .then((data) => {
       const weather = document.querySelector("#weather");
-      weather.innerHTML = `${data.weather[0].main}, ${Math.round(data.main.temp)}°C`;
+      weather.innerHTML = `${data.weather[0].main}, ${Math.round(data.main.temp)}°C<br>${data.name}`;
     });
 }
 

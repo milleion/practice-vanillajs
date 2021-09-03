@@ -26,6 +26,7 @@ function paintTodo(newTodoObj) {
   span.innerText = newTodoObj.text;
   const chkImg = document.createElement("img");
   chkImg.src = "img/chk.png";
+  chkImg.style.cursor = "pointer";
   chkImg.addEventListener("click", deleteTodo);
   li.appendChild(span);
   li.appendChild(chkImg);
